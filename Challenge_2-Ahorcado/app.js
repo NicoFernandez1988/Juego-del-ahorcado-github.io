@@ -154,11 +154,32 @@ function palabraAleatoria() {
 }
 
 function alertaGanado() {
-  alert('Felicidades, ganaste!')
+
+  
+  swal({
+
+    title: 'Felicidades',
+    text: 'Adivinaste la palabra',
+    icon: 'success',
+    buttons: false,
+    timer: 4000,
+
+  })
 }
 
 function alertaPerdido(palabra) {
-  alert('Lo siento, perdiste... la palabra era: ' + palabra)
+  
+
+  swal({
+
+    title: 'Lo siento, perdiste',
+    text: 'la palabra era: ' + palabra,
+    icon: 'error',
+    buttons: false,
+    timer: 4000,
+
+  })
+
 }
 
 nuevoJuego()
